@@ -23,9 +23,9 @@ if (isset ($_POST['submit'])) //handle the form
 	}
 	// Define the query.
 	$query = "INSERT INTO emailList
-	(FirstName, email)
-	VALUES ('{$_POST['name']}',
-	'{$_POST['email']}')";
+	(ID, LastName, FirstName, email, phone)
+	VALUES (,,'{$_POST['name']}',
+	'{$_POST['email']}',)";
 	// Execute the query.
 	if (@mysql_query ($query))
 	{
