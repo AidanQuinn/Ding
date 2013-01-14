@@ -10,9 +10,9 @@ error_reporting (E_ALL & ~E_NOTICE);
 if (isset ($_POST['submit'])) //handle the form
 {	
 	// Connect and select.
-	if ($dbc = @mysql_connect('localhost', 'username', 'password'))
+	if ($dbc = @mysql_connect('localhost', 'dingmed_aidan', 'BHprh7abJV'))
 	{
-		if (!@mysql_select_db ('database_name'))
+		if (!@mysql_select_db ('dingmed_contactList'))
 		{
 			die (mysql_error());
 		}
@@ -23,8 +23,8 @@ if (isset ($_POST['submit'])) //handle the form
 	}
 	// Define the query.
 	$query = "INSERT INTO emailList
-	(firstname, email)
-	VALUES ('{$_POST['firstname']}',
+	(FirstName, email)
+	VALUES ('{$_POST['name']}',
 	'{$_POST['email']}')";
 	// Execute the query.
 	if (@mysql_query ($query))
