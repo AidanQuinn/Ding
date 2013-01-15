@@ -15,7 +15,7 @@ var contactForm = {
 				$('form#myform').remove();
 				$('section.content article p').text('...');
 				try {
-					$.post('sendmail.php', {name: name, email: email, message: message}, function(data) {
+					$.post('contactlist_form.php', {name: name, email: email, message: message}, function(data) {
 						$('section.content article p').text('Thanks for your email!');	
 					});
 				} catch (e) {
