@@ -106,8 +106,8 @@
 	    <p>If you provide us with your email address, you'll be the first to hear about updates and our release! (Don't worry, we promise
 		not to share your email address)</p>
 		<form id="myform" class="form-inline" action="contactlist_form.php" method="post" onsubmit="$('#myModal').modal('hide')">
-		  <input type="text" class="input-small" placeholder="First Name" name="name">
-		  <input type="email" class="input" placeholder="Email" name="email">
+		  <input type="text" class="input-small" placeholder="First Name" name="name" id="name">
+		  <input type="email" class="input" placeholder="Email" name="email" id="email">
 		  <label class="checkbox">
 		  </label>
 		</form>
@@ -155,6 +155,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
    
     <script src="js/jquery.js"></script>
+    <script src="js/form_listener.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
