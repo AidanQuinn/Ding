@@ -9,7 +9,7 @@
 			var name = $('form input#name').val();
 			var email = $('form input#email').val();
 
-			if (!$.trim(name).length || !$.trim(email).length || !$.trim(message).length) {
+			if (!$.trim(name).length || !$.trim(email).length) {
 				alert ('Please fill in both a name and email before submitting. Thanks!');
 			} else {
 				$('form#myform').remove();
