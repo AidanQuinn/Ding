@@ -14,12 +14,12 @@ if (isset ($_POST['submit'])) //handle the form
 	{
 		if (!@mysql_select_db ('dingmed_contactList'))
 		{
-			die (mysql_error());
+			die (print mysql_error());
 		}
 	}
 	else
 	{
-		die (mysql_error());
+		die (print mysql_error());
 	}
 	// Define the query.
 	$query = "INSERT INTO emailList
@@ -37,4 +37,5 @@ if (isset ($_POST['submit'])) //handle the form
 	}
 	mysql_close();
 }
+phpinfo();
 ?>
