@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ding Med Landing Page</title>
+    <title>Ding! Med</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,7 +46,8 @@
         margin-top: 28px;
       }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -62,11 +63,11 @@
 
     <div class="masthead">
 		<ul class="nav nav-pills pull-right">
-        	<li><a href="#">Home</a></li>
-        	<li><a href="#">About</a></li>
-			<li class="active"><a href="#">Team</a></li>
-			<li><a href="#">Legal</a></li>
-        	<li><a href="#">Contact</a></li>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li class="active"><a href="#">Legal</a></li>
+        	<li><a href="contact.html">Contact</a></li>
         </ul>
 		<br>
 		<br>
@@ -74,36 +75,38 @@
 
     <hr>
 	
-	<ul class="thumbnails row-fluid">
-	  <li class="span3 offset1">
-	    <div class="thumbnail">
-	      <img src="img/aidan-headshot.png" width="250" alt="">
-	      <h3>Aidan</h3>
-	      <p>Founder and ceo.</p>
-	    </div>
-	  </li>
-	  <li class="span3 offset1">
-	    <div class="thumbnail">
-	      <img src="img/tommaso-headshot.png" width="250" alt="">
-	      <h3>Tommaso</h3>
-	      <p>Software engineer. </p>
-	    </div>
-	  </li>
-	  <li class="span3 offset1">
-	    <div class="thumbnail">
-	      <img src="img/edwin-headshot.png" width="250" alt="">
-	      <h3>Edwin</h3>
-	      <p>General badass.</p>
-	    </div>
-	  </li>
-	  <li class="span5">
-	    <div class="thumbnail">
-	      <img src="img/interns-headshot.png" width="500" alt="">
-	      <h3> Stacey, Caroline, Kate</h3>
-	      <p>Hot interns!</p>
-	    </div>
-	  </li>
-	</ul>
+	<div class="row-fluid">
+		<ul class="thumbnails">
+		  <li class="span4">
+		    <a href="#" id="aidan" class="thumbnail" rel="popover" 
+			data-content="Founder and ceo" data-original-title="Aidan Quinn"
+			data-placement="bottom" data-trigger="hover">
+		      <img src="img/aidan-headshot.png" alt="Aidan">
+		    </a>
+		  </li>
+		  <li class="span4">
+		    <a href id="tommaso" class="thumbnail" rel="popover" 
+			data-content="Design and development" data-original-title="Tommaso Dalla-Favera"
+			data-placement="bottom" data-trigger="hover">
+		      <img src="img/tommaso-headshot.png" alt="Tommaso">
+		    </a>
+		  </li>
+		  <li class="span4">
+		    <a href id="edwin" class="thumbnail" rel="popover" 
+			data-content="General Badass" data-original-title="Edwin Lin, MA"
+			data-placement="bottom" data-trigger="hover"">
+		      <img src="img/edwin-headshot.png" alt="Edwin">
+		    </a>
+		  </li>
+		  <li class="span5">
+		    <a href id="interns" class="thumbnail" rel="popover" 
+			data-content="They take care of our needs and have fun" data-original-title="Kelly, Catherine, Amanda"
+			data-placement="bottom" data-trigger="hover">
+		      <img src="img/interns-headshot.png" alt="Interns">
+		    </a>
+		  </li>
+		</ul>
+	</div>
 
 
 	<div>
@@ -125,7 +128,6 @@
 		</p>
       	
 		<p align="center">&copy; Ding Medical Technologies, LLC 2013</p>
-		
       </div>
 
     </div> <!-- /container -->
@@ -146,6 +148,14 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+	<script>
+		$(function(){
+			$('#aidan').popover();
+			$('#tommaso').popover();
+			$('#edwin').popover();
+			$('#interns').popover();
+		});
+	</script>
 
   </body>
 </html>
