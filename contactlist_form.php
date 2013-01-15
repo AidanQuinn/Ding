@@ -51,9 +51,15 @@ mysql_close();
 
 // Send thanks/confirmation email.
 
-$body = ""
+$headers = "From: info@dingconcussion.com\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-mail ($_POST['email'], 'Thanks for signing up for the DingMed news letter!', $body, 'From: DINGEMAIL');
+$message = '<html><body>';
+$message .= '<h1>This is a beautiful successful test</h1>';
+$message .= '</body></html>';
+
+mail ($_POST['email'], 'Hello from DingMed!', $message, $headers);
 
 //
 phpinfo();
