@@ -56,9 +56,9 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 $message = '<html><body><div style="width:100%;">';
-$message .= '<img src="img/logo-min.png" style="width:150px; height=150px; float:left">';
+$message .= '<img src="http://www.dingconcussion.com/img/logo-min.png" style="width:150px; height=150px; float:left">';
 $message .= '<h1>Hey ' . strip_tags($_POST['name']) . ',</h1> <br></br>';
-$message .= '<h2>Thanks for your interest in the DingMed iphone/ipad application. We&_#39ll let you know when we launch.</h2>';
+$message .= '<h2>Thanks for your interest in the DingMed iphone/ipad application. We' . &apos . 'll let you know when we launch.</h2>';
 $message .= '</body></html>';
 
 mail ($_POST['email'], 'Hello from DingMed!', $message, $headers);
