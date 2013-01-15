@@ -1,8 +1,8 @@
 /**
  * @author Tommaso Dalla Favera
  */
-
-var contactForm = {
+!function ($) {
+ var contactForm = {
 	send : function () {
 		$('button[type=submit]').click(function(event) {
 			event.preventDefault();
@@ -15,7 +15,7 @@ var contactForm = {
 				$('form#myform').remove();
 				$('section.content article p').text('...');
 				try {
-					$.post('contactlist_form.php', {name: name, email: email, message: message}, function(data) {
+					$.post('contactlist_form.php', {name: name, email: email}, function(data) {
 						$('section.content article p').text('Thanks for your email!');	
 					});
 				} catch (e) {
@@ -24,4 +24,5 @@ var contactForm = {
 			}			
 		});
 	}
-}
+ }
+}(window.jQuery);
