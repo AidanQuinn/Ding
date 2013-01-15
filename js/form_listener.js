@@ -8,13 +8,13 @@ var contactForm = {
 			var name = $('form input#name').val();
 			var email = $('form input#email').val();
 			$('form#myform').remove();
-			$('section.content article p').text('...');
+			//$('section.content article p').text('...');
 			try {
 				$.post('contactlist_form.php', {name: name, email: email}, function(data) {
-					$('section.content article p').text('Thanks for your email!');	
+					//$('section.content article p').text('Thanks for your email!');	
 				});
 			} catch (e) {
-				$('section.content article p').text('Woops ... there seems to have been a problem accepting your email. Sorry. Please refresh the page and try again.');
+				//$('section.content article p').text('Woops ... there seems to have been a problem accepting your email. Sorry. Please refresh the page and try again.');
 			}
 		});
 	}
@@ -22,4 +22,4 @@ var contactForm = {
 
 $(document).ready(function() {
 	contactForm.send();
-}
+});
