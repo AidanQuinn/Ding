@@ -10,7 +10,7 @@ error_reporting (E_ALL & ~E_NOTICE);
 if (isset ($_POST['submit'])) //handle the form
 {	
 	// Connect and select.
-	if ($dbc = @mysql_connect('localhost', 'dingmed_aidan', 'BHprh7abJV'))
+	if (@mysql_connect('localhost', 'dingmed_aidan', 'BHprh7abJV'))
 	{
 		if (!@mysql_select_db ('dingmed_contactList'))
 		{
