@@ -19,3 +19,7 @@ var contactForm = {
 		});
 	}
 }
+
+$(document).ready(function() {
+	contactForm.send();
+}
