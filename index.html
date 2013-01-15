@@ -103,9 +103,7 @@
 	    <h3 id="myModalLabel"> Stay In Touch! </h3>
 	  </div>
 	  <div class="modal-body">
-	    <p>If you provide us with your email address, you'll be the first to hear about updates and our release! (Don't worry, we promise
-		not to share your email address)</p>
-		<form id="myform" class="form-inline" method="post" action="contactlist_form.php" onsubmit="$('#myModal').modal('toggle')">
+		<form id="myform" class="form-inline" method="post" action="contactlist_form.php">
 		  <input type="text" class="input-small" placeholder="First Name" name="name" id="name">
 		  <input type="email" class="input" placeholder="Email" name="email" id="email">
 		  <label class="checkbox">
@@ -114,7 +112,7 @@
 	  </div>
 	  <div class="modal-footer">
 	    <button class="btn" data-dismiss="modal" aria-hidden="true">Nah, I'm good </button>
-	    <button type="submit" name="submit" form="myform" class="btn btn-primary">Awesome! Sign me up </button>
+	    <button type="submit" name="submit" form="myform" class="btn btn-primary" data-dismiss="modal">Awesome! Sign me up </button>
 	  </div>
 	</div>
 
