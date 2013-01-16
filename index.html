@@ -3,171 +3,106 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Welcome to Ding Medical</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	
+	<head>
+		
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    	<title>Welcome to Ding Medical</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
     
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    	<script src="js/modernizr-2.6.2.min.js"></script>
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
+    	<!-- style -->
+    	
+    	<link href="css/bootstrap.css" rel="stylesheet">
+    	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css"  rel="stylesheet">
+    	
+    	<style type="text/css">
+      	
+	      	body {
+	        	padding-top: 20px;
+	        	padding-bottom: 40px;
+	      	}
+	
+	      	/* custom container */
+ 	     	.container-narrow {
+	        	margin: 0 auto;
+	        	max-width: 700px;
+	      	}
+ 	     	.container-narrow > hr {
+	        	margin: 30px 0;
+ 	     	}
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
+	      	/* main marketing message and sign up button */
+	      	.jumbotron {
+	        	margin: 60px 0;
+	        	text-align: center;
+	      	}
+	      	.jumbotron h1 {
+	        	font-size: 72px;
+	        	line-height: 1;
+	      	}
+	      	.jumbotron .btn {
+	        	font-size: 21px;
+	        	padding: 14px 24px;
+	      	}
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
+	      	/* supporting marketing content */
+	      	.marketing {
+	        	margin: 60px 0;
+	      	}
+	      	.marketing p + h4 {
+	        	margin-top: 28px;
+	      	}
+      	
+		</style>
+    	
+    	<!-- /style -->
+    	
+    	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	<!--[if lt IE 9]>
+      	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+    	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+		<![endif]-->
 
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- fav and touch icons -->
+		
+    	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="img/logo-min.png">
+		
+		<!-- /fav and touch icons -->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE 7]>
-	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
-	<![endif]-->
-
-	<!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="img/logo-min.png">
-
-	<!-- Google Anylitics code -->
+		<!-- google analytics code -->
+		
 		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-19791016-2']);
-		  _gaq.push(['_setDomainName', 'dingconcussion.com']);
-		  _gaq.push(['_trackPageview']);
+			var _gaq = _gaq || [];
+		  	_gaq.push(['_setAccount', 'UA-19791016-2']);
+		  	_gaq.push(['_setDomainName', 'dingconcussion.com']);
+		  	_gaq.push(['_trackPageview']);
 		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
+		  	(function() {
+		    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  	})();
 		</script>
 
-  </head>
+		<!-- /google analytics code -->
+		
+	</head>
 
-  <body>
-
-	<div id="myAlert" class="alert alert-success hide span2" data-alert="alert" style="position:fixed;">
-		<button type="button" class="close" data-dismiss="alert">&times;</button>
-		<strong>Great!</strong> Thanks for submitting your email.
-	</div>
-
-    <div class="container-narrow">
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-		  <li><a href="team.html">Team</a></li>
-		  <li><a href="legal.html">Legal</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-		<br>
-		<br>
-      </div>
-
-      <hr>
-
-      <div class="jumbotron">
-      	<img src="img/logo-min.png" width="245" height="245">
-        <h1>Ding Med</h1>
-		<br>
-        <p class="lead">Ding! Med is bringing the intuitive concussion recognition tools to the sidelines of sports everywhere. 
-		Based on the most up-to-date guidelines and research, we are also pioneering new ways for coaches and parents to even more 
-		rigorously test for symptoms of concussion.</p>
-
-		<!-- Button to trigger modal -->
-		<a href="#myModal" role="button" class="btn btn-large btn-success" data-toggle="modal">Stay Informed</a>
-      </div>
-
-	 
-	<!-- Modal -->
-	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-header">
-	    <h3 id="myModalLabel"> Stay In Touch! </h3>
-	  </div>
-	  <div class="modal-body">
-	  	<p>If you provide us with your email address, you'll be the first to hear about updates and our release! (Don't worry, we promise not to share your email address)</p>
-		<form id="myform" class="form-inline" method="post" action="contactlist_form.php">
-		  <input type="text" class="input-small" placeholder="First Name" name="name" id="name">
-		  <input type="email" class="input" placeholder="Email" name="email" id="email">
-		  <label class="checkbox">
-		  </label>
-		</form>
-	  </div>
-	  <div class="modal-footer">
-	    <button class="btn" data-dismiss="modal" aria-hidden="true">Nah, I'm good </button>
-	    <a href="index2.html"></a><button type="submit" name="submit" form="myform" class="btn btn-primary" data-dismiss="modal">Awesome! Sign me up </button></a>
-	  </div>
-	</div>
-
-      <hr>
-
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Easy to use</h4>
-          <p>Simply download our app from the iTunes app store on any ios device and you're ready to go.</p>
-
-          <h4>Intuitive reporting</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Track athletes over time</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="span2">
-        </div>
-			
-        <div class="span4">
-			<img  src="img/homescreen.png" width="180">
-        </div>
-      </div>
-
-      <hr>
-
+<<<<<<< HEAD
       <div class="footer">
       	<p align="right">
       		<a href="https://www.facebook.com/pages/Ding-Med/167974579887131?fref=ts"><i class="icon-facebook-sign icon-spin icon-2x"></i></a> 
@@ -177,13 +112,124 @@
       		</p>
       	<p align="center">&copy; Ding Medical Technologies, LLC 2013</p>
       </div>
+=======
+	<body>
+>>>>>>> reformatted
 
-    </div> <!-- /container -->
+		<!-- hidden alert prompt for email submission -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+		<div id="myAlert" class="alert alert-success hide span2" data-alert="alert" style="position:fixed;">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Great!</strong> Thanks for submitting your email.
+		</div>
+		
+		<!-- /alert prompt -->
+		
+		<!-- container -->
+
+    	<div class="container-narrow">
+    		
+    		<!-- navbar -->
+    		
+      		<div class="masthead">
+        		<ul class="nav nav-pills pull-right">
+          			<li class="active"><a href="#">Home</a></li>
+		          	<li><a href="about.html">About</a></li>
+		  			<li><a href="team.html">Team</a></li>
+		  			<li><a href="legal.html">Legal</a></li>
+          			<li><a href="contact.html">Contact</a></li>
+        		</ul>
+				<br>
+				<br>
+      		</div>
+      		
+      		<!-- /navbar -->
+      		
+      		<hr>
+      		
+      		<!-- centerplate -->
+
+      		<div class="jumbotron">
+      			<img src="img/logo-min.png" width="245" height="245">
+        		<h1>Ding Med</h1>
+				<br>
+        		<p class="lead">Ding! Med is bringing the intuitive concussion recognition tools to the sidelines of sports everywhere. 
+				Based on the most up-to-date guidelines and research, we are also pioneering new ways for coaches and parents to even more 
+				rigorously test for symptoms of concussion.</p>
+
+				<!-- button to trigger modal -->
+				
+				<a href="#myModal" role="button" class="btn btn-large btn-success" data-toggle="modal">Stay Informed</a>
+      		
+      			<!-- /button to trigger modal -->
+      			
+      		</div>
+      			
+      		<!-- /centerplate -->
+
+			<!-- modal -->
+			
+			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  			<div class="modal-header">
+	    			<h3 id="myModalLabel"> Stay In Touch! </h3>
+	  			</div>
+	  			<div class="modal-body">
+	  				<p>If you provide us with your email address, you'll be the first to hear about updates and our release! (Don't worry, we promise not to share your email address)</p>
+					<form id="myform" class="form-inline" method="post" action="contactlist_form.php">
+		  				<input type="text" class="input-small" placeholder="First Name" name="name" id="name">
+		  				<input type="email" class="input" placeholder="Email" name="email" id="email">
+						<label class="checkbox">
+		  				</label>
+					</form>
+	  			</div>
+	  			<div class="modal-footer">
+	    			<button class="btn" data-dismiss="modal" aria-hidden="true">Nah, I'm good </button>
+	    			<a href="index2.html"></a><button type="submit" name="submit" form="myform" class="btn btn-primary" data-dismiss="modal">Awesome! Sign me up </button></a>
+	  			</div>
+			</div>
+			
+			<!-- /modal -->
+
+      		<hr>
+
+			<!-- marketing -->
+
+      		<div class="row-fluid marketing">
+        		<div class="span6">
+          			<h4>Easy to use</h4>
+          			<p>Simply download our app from the iTunes app store on any ios device and you're ready to go.</p>
+          			<h4>Intuitive reporting</h4>
+          			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          			<h4>Track athletes over time</h4>
+          			<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        		</div>
+        		<div class="span2">
+        		</div>
+        		<div class="span4">
+					<img  src="img/homescreen.png" width="180">
+        		</div>
+      		</div>
+      		
+      		<!-- /marketing -->
+      			
+      		<hr>
+      		
+      		<!-- footer -->
+
+      		<div class="footer">
+      			<p align="right"><a href="https://www.facebook.com/pages/Ding-Med/167974579887131?fref=ts"><i class="icon-facebook-sign icon-spin icon-2x"></i></a> <a href="https://twitter.com/DingMed"> <i class="icon-twitter-sign icon-2x"></i> </a> <a href="http://www.linkedin.com/company/1473725?trk=tyah"><i class="icon-linkedin-sign icon-2x"></i></a> </p>
+      			<p align="center">&copy; Ding Medical Technologies, LLC 2013</p>
+      		</div>
+      		
+      		<!-- /footer -->
+
+		</div>
+	
+		<!-- /container -->
+
+    	<!-- javascript -->
    
+<<<<<<< HEAD
     <script src="js/jquery.js"></script>
     <script src="js/form_listener.js"></script>
     <script src="js/bootstrap-transition.js"></script>
@@ -208,4 +254,25 @@
 		</script>
 
   </body>
+=======
+    	<script src="js/jquery.js"></script>
+	    <script src="js/form_listener.js"></script>
+	    <script src="js/bootstrap-transition.js"></script>
+	    <script src="js/bootstrap-alert.js"></script>
+    	<script src="js/bootstrap-modal.js"></script>
+	    <script src="js/bootstrap-dropdown.js"></script>
+	    <script src="js/bootstrap-scrollspy.js"></script>
+    	<script src="js/bootstrap-tab.js"></script>
+		<script src="js/bootstrap-tooltip.js"></script>
+    	<script src="js/bootstrap-popover.js"></script>
+    	<script src="js/bootstrap-button.js"></script>
+    	<script src="js/bootstrap-collapse.js"></script>
+    	<script src="js/bootstrap-carousel.js"></script>
+    	<script src="js/bootstrap-typeahead.js"></script>
+    
+    	<!-- javascript -->
+
+	</body>
+  
+>>>>>>> reformatted
 </html>
