@@ -16,6 +16,7 @@ var contactForm = {
 			} catch (e) {
 				//$('section.content article p').text('Woops ... there seems to have been a problem accepting your email. Sorry. Please refresh the page and try again.');
 			}
+			$('div#myAlert').fadeIn(2000);
 		});
 	}
 }
