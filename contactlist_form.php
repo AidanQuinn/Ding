@@ -284,7 +284,9 @@ body, td { font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
                         <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
                             <tbody><tr style="border-collapse:collapse;" >
                                 <td class="w580" width="580" style="font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;border-collapse:collapse;" >
-                                    <p align="left" class="article-title" style="font-size:18px;line-height:24px;color:#b0b0b0;font-weight:bold;margin-top:0px;margin-bottom:18px;font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;" >Hi there!</p>
+                                    <p align="left" class="article-title" style="font-size:18px;line-height:24px;color:#b0b0b0;font-weight:bold;margin-top:0px;margin-bottom:18px;font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;" >Hi there ';
+$message .= "{$_POST['name']}";
+$message .= ',</p>
                                     <div align="left" class="article-content" style="font-size:13px;line-height:18px;color:#444444;margin-top:0px;margin-bottom:18px;font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;" >
                                         <p style="margin-bottom:15px;" >
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; We are glad that you have decided to take the first step towward protecting your children, friends, teammates&nbsp;and family from the devistating effects of repeated concussions. Check out the LEARN section of our new website to continue learning about how to recognize the signs and symptoms of concussion and mTBI. In the mean time, we are working hard at brining you the best possible app for your iPhone and iPad. We will let you know as soon as it is avaiable on the iTunes app store.</p>
